@@ -77,6 +77,10 @@ h1 {
 
 .row {
     margin: 8px -16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Add padding BETWEEN each column */
@@ -87,21 +91,24 @@ h1 {
 
 /* Create four equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 25%;
+    /* float: left; */
+    
 }
 
 /* Clear floats after rows */
-.row:after {
+/* .row:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 /* Content */
 .content {
     background-color: white;
     padding: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -114,7 +121,8 @@ h1 {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
-        width: 100%;
+        width: fit-content;
+        align-items: center;
     }
 	.menu {
 		font-size: 10px;
@@ -122,6 +130,12 @@ h1 {
 	.logo {
 		font-size: 20px;
 	}
+
+    .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 footer {
