@@ -76,22 +76,21 @@ h1 {
 }
 
 .row {
-    margin: 8px -16px;
+    /* margin: 8px -16px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 /* Add padding BETWEEN each column */
 .row,
 .row>.column {
-    padding: 8px;
+    
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
-    /* float: left; */
     
 }
 
@@ -163,4 +162,8 @@ a{
 
 li{
 	list-style: none
+}
+
+.contact{
+    width: 50%;
 }
